@@ -1,0 +1,77 @@
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  background-color: #6ab2c6;
+}
+.App {
+  padding: 8px;
+  background-color: #56c6ca;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: sans-serif;
+  width: 380px;
+  max-height: 200px;
+}
+
+#prefix-search {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+#prefix-search input {
+  width: 50px;
+  display: block;
+}
+#list-of-names {
+  display: flex;
+  padding: 0 8px;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+#list-of-names select {
+  width: 150px;
+  display: block;
+  overflow: hidden;
+}
+#list-of-names form {
+  display: flex;
+  flex-direction: column;
+}
+#list-of-names form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list-of-names input {
+  margin: 8px;
+  width: 80px;
+}
+#button-container button {
+  margin: 8px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #c1faff;
+}
+#button-container button:hover {
+  cursor: pointer;
+  background-color: #6ab2c6;
+}
+#button-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: inherit;
+}
+input {
+  padding: 4px;
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  background-color: #c1faff;
+}
