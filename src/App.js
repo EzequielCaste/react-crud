@@ -50,12 +50,6 @@ export default function App() {
     const index = names.findIndex(
       (item) => item.first.includes(name) || item.last.includes(surname)
     );
-    // validate if user already exists
-    if (index !== -1) {
-      alert("User already in list");
-      reset();
-      return null;
-    }
     // validate if inputs are empty
     if (name !== "" && surname !== "") {
       let newNames = [...names];
@@ -68,6 +62,13 @@ export default function App() {
       reset();
     } else {
       alert("Please fill out Name and Surname");
+      return null;
+    }
+    // validate if user already exists
+    if (index !== -1) {
+      alert("User already in list");
+      reset();
+      return null;
     }
   };
   const updateUser = (e) => {
